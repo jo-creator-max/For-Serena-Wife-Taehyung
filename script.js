@@ -20,8 +20,8 @@ function changeMessage() {
 function createStar() {
   const star = document.createElement("div");
   star.classList.add("shooting-star");
-  star.style.top = Math.random() * window.innerHeight + "px";
-  star.style.left = Math.random() * window.innerWidth + "px";
+  star.style.top = Math.random() * window.innerHeight + "%";
+  star.style.left = Math.random() * window.innerWidth + "%";
   document.querySelector(".stars").appendChild(star);
   setTimeout(() => star.remove(), 1200);
 }
@@ -41,8 +41,8 @@ function createTwinkleStars(numStars) {
   }
 }
 
-// buat 50 bintang kecil
-createTwinkleStars(50);
+// buat 40 bintang kecil
+createTwinkleStars(40);
 
 /* ===== MUSIK AMBIENT ===== */
 const music = document.getElementById("bg-music"); //kalau belum ada file, tidak error
