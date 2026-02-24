@@ -50,7 +50,7 @@ const music = document.getElementById("bg-music"); //kalau belum ada file, tidak
 document.addEventListener("click", () => {
   if (music) {
    if (music.paused) {
-    music.volume = 0.5;
+    music.volume = 0.75;
     music.play();
    }
   }
